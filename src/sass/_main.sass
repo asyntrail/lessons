@@ -1,18 +1,36 @@
 body
-  margin: 8px
+  font-family: Arial, sans-serif
+  background: #f7f8f9
 
 .container
   max-width: 940px
-  margin: 0 auto
+  margin: 0 auto 
+  padding: 0 1%
+
+.homebox 
+    text-align: center
+    font-size: 22px
+    max-width: 100%
+    min-height: 600px
+    padding-top: 50px
+
+section 
+    margin-bottom: 70px
 
 .custom-title
   line-height: 200%
-  font-family: serif
-  font-size: 25px
+  font-size: 18px
+
+.sub-title
+  line-height: 200%
+  font-size: 16px
+
+.center
+  text-align: center
 
 .text
   line-height: 150%
-  font-size: 21px
+  font-size: 16px
   margin-top: 16px
   margin-bottom: 9px
 
@@ -24,7 +42,12 @@ body
 
 .italics
   color: green
-  text-decoration: underline
+  font-weight: bold
+  // text-decoration: underline
+
+.edit
+  font-weight: bold
+  font-style: italic
 
 .lesson-img1
   height: 189px
@@ -33,3 +56,85 @@ body
 
 .img-block
   text-align: center
+
+table
+  margin: 0px auto 50px auto
+  width: 50%
+  +r(600)
+    width: 100%
+
+
+table, th, td
+  border: 1px solid black
+  vertical-align: middle
+  padding: 1px
+  font-weight: bold
+  font-style: italic
+  font-size: 16px
+
+.verbs td
+  +r(530)
+    font-size: 12px
+
+table tr:nth-child(odd)
+  background: #f1f9ff
+
+table tr:nth-child(even)
+  background: #E5E5E5s
+
+
+
+.sidebar-menu li a.is-active,
+.sidebar-menu ul li a:hover,
+a:hover 
+    color: #e8663c
+
+
+.sidebar-menu 
+    position: fixed
+    width: 200px
+    height: 100%
+    background: #f2ae9c
+    right: -200px
+    -webkit-transition: 500ms linear
+    -o-transition: 500ms linear
+    transition: 500ms linear
+    z-index: 2
+    text-align: center
+
+
+.sidebar-menu ul 
+    list-style: none
+
+
+.homebox ul li a 
+    text-decoration: none
+    padding: 15px 10px
+
+.sidebar-menu li a 
+    color: #fff
+    padding: 15px 10px
+    display: inline-block
+    font-weight: 700
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 15px
+
+
+.sidebar-menu .toggle-btn 
+    position: absolute
+    right: 230px
+    top: 25px
+    cursor: pointer
+
+
+.sidebar-menu .toggle-btn span 
+    display: block
+    width: 30px
+    height: 5px
+    background: #e8663c
+    margin: 5px 0
+
+
+.sidebar-menu.active 
+    right: 0

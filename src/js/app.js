@@ -1,3 +1,5 @@
-import sayHello from './lib/sayHello.js';
+function toggleSidebar() {
+    document.getElementById("sidebar-menu").classList.toggle('active');
+}
 
-sayHello();
+document.getElementById('toggle-btn').onclick = toggleSidebar;
